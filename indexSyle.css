@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(45, 43, 46);
+  }
+  
+   /*h1 {
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-size: 100px;
+  }*/
+  
+  p {
+    color: rgb(230, 230, 230);
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .startContainer {
+    /* Set the background image and position */
+    background-image: url('Bilder/ChatGPT_logo.svg');
+    background-color: rgb(252, 252, 252);
+    background-size: 150% 150%; /* Adjust the image size to cover the container */
+    background-repeat: no-repeat;
+    background-position: left; /* Center the image within the container */
+    /* Add some padding to make the text more readable */
+    padding: 20px;
+    text-align: center;
+    font-size: 450%;
+    color: rgb(63, 62, 62);
+    /* Set a text shadow to make the text stand out on the image */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
