@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="indexSyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="titel">
-        <div class="container">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
             </div>
-        </div>
-        <div class="left-image">
-            <img src="Bilder/ChatGPT_logo.svg" alt="Bild links">
-        </div>
-        <div class="center-text">
-            <h1>ChatGPT</h1>
-        </div>
-        <div class="right-image">
-            <img src="Bilder/ChatGPT_logo.svg" alt="Bild rechts">
-        </div>
+            <div class="input-box">
+                <input type="password" placeholder="Passworde" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
 
+            <div class="remember-forgot">
+                <label><input type="checkbox">remember me</label>
+                <a href="#">Forgott Password?</a>
+            </div>
 
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Dont have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
     </div>
 
-
-    <div class="content">
-
-    </div>
-
-    <script src="indexjs.js"></script>
 </body>
 
 </html>

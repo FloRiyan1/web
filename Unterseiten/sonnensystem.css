@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+.sun {
+    width: 200px;
+    height: 200px;
+    background-color: #ffcc00;
+    /* Sonnenfarbe */
+    border-radius: 50%;
+    position: relative;
+}
+
+.orbit {
+    width: 400px;
+    /* Umlaufbahnradius */
+    height: 400px;
+    /* Umlaufbahnradius */
+    border: 2px dashed #999;
+    /* Umlaufbahn anzeigen */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet {
+    width: 40px;
+    height: 40px;
+    background-color: #ff9933;
+    /* Mars-Farbe */
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit 10s linear infinite;
+    /* Animation der Umlaufbahn */
+}
+
+.planet-inner {
+    width: 10px;
+    height: 10px;
+    background-color: #cc6600;
+    /* Mars-Oberflächenfarbe */
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(-200px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(-200px) rotate(-360deg);
+    }
+}
