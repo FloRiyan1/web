@@ -16,6 +16,11 @@ body {
     background-position: center;
 }
 
+.meldung {
+    display: none;
+    color: red;
+}
+
 .wrapper {
     width: 420px;
     background: transparent;
