@@ -16,7 +16,7 @@ anmeldeFormular.addEventListener('submit', function(e) {
     // Beispiel: Wenn Anmeldeinformationen korrekt sind
     if (benutzername === 'Florian' && passwort === 'Hogrefe') {
         // Weiterleitung zur neuen Seite
-        window.location.href = 'Unterseiten/main/menu.html';
+        window.location.href = '../main/menu.html';
     } else {
         // Anzeige einer Fehlermeldung
         meldung.style.display = 'flex';
@@ -27,10 +27,10 @@ anmeldeFormular.addEventListener('submit', function(e) {
 
 passwordHide.onclick = function() {
     if (passwordfield.type == "password") {
-        passwordHide.src = 'Bilder/lock-open-solid-24.png'
+        passwordHide.src = '../../Bilder/lock-open-solid-24.png'
         passwordfield.type = 'text';
     } else {
-        passwordHide.src = 'Bilder/lock-solid-24.png'
+        passwordHide.src = '../../Bilder/lock-solid-24.png'
         passwordfield.type = 'password';
     }
 

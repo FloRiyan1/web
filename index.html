@@ -13,19 +13,21 @@
 <body>
     <div class="wrapper">
         <form id="anmeldeFormular">
-            <h1>Login</h1>
-            <div id="meldung">
-                <a>Username oder Password inkorrekt</a>
+            <h1 id="login-text">Login</h1>
+            <div class="meldung" id="meldung">
+                <a>Username oder Password inkorrekt !!!</a>
             </div>
             <div class="input-box">
-                <input type="text" id="username" placeholder="Username" required>
-                <i class='bx bxs-user'></i>
+                <div class="input-box-username">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box-password">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <!-- <i id="password-show" class='bx bxs-lock'></i> -->
+                    <img id="password-hide" class="i" src="Bilder/lock-solid-24.png"></img>
+                </div>
             </div>
-            <div class="input-box">
-                <input type="password" id="password" placeholder="Password" required>
-                <i class='bx bx-lock-alt'></i>
-            </div>
-
             <div class="remember-forgot">
                 <label><input type="checkbox">remember me</label>
                 <a href="#">Forgott Password?</a>
@@ -34,7 +36,7 @@
             <button type="submit" class="btn" id="login-button">Login</button>
 
             <div class="register-link">
-                <p>Dont have an account? <a href="#">Register</a></p>
+                <p>Dont have an account? <a href="Unterseiten/Regestrierung/regestrierung.html">Register</a></p>
             </div>
         </form>
     </div>

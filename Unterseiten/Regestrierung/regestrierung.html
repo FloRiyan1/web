@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="regestrierung.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="registerFormular">
+            <h1 id="register-text">Register</h1>
+            <div class="meldung" id="meldung">
+                <a class="username-exist">Username exestiert bereits !!!</a>
+                <a class="password-uebereinstimmung">Die Passwörter stimmen nicht überein !!!</a>
+            </div>
+            <div class="input-box">
+                <div class="input-box-email">
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box-username">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box-password">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <img id="password-hide" class="password-img" src="Bilder/lock-solid-24.png"></img>
+                    <input type="password" id="password-wiederholen" placeholder="Password" required>
+                    <img id="password-wiederholen-hide" class="password-wiederholen" src="Bilder/lock-solid-24.png"></img>
+                </div>
+            </div>
+
+            <button type="submit" class="btn" id="register-button">Register</button>
+
+            <div class="login-link">
+                <p>You have an account? <a href="../../index.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="regestrierung.js"></script>
+
+</body>
+
+</html>
