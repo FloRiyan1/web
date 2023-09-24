@@ -97,15 +97,6 @@ body {
     cursor: pointer;
 }
 
-
-/* #password-show {
-    display: flex;
-}
-
-#password-hide {
-    display: none;
-} */
-
 .wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;
@@ -114,8 +105,13 @@ body {
 }
 
 .remember-forgot label input {
+    display: none;
     accent-color: #fff;
     margin-right: 3px;
+}
+
+.remember-forgot label {
+    display: none;
 }
 
 .remember-forgot a {
